@@ -502,11 +502,9 @@ body {
     form {
       background-color: #0a162f;
       padding: 20px;
-    
-    
-          
-          text-align: center;
- 
+
+      text-align: center;
+
       margin: auto;
       border-radius: 20px;
       align-items: center;
@@ -572,7 +570,7 @@ body {
 
   #layer1 {
     margin-top: 90px;
-    margin-bottom: 400px;
+    /* margin-bottom: 400px; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -582,13 +580,12 @@ body {
       margin-top: 10px;
     }
     .layer1-image {
-      top: 370px;
-
-      img {
-        width: 100vw;
-        height: 50vh;
-        object-fit: cover;
-      }
+      width: 400px;
+      height: auto !important;
+      position: unset;
+      margin-left: 0px;
+      /* margin-top: 501px; */
+      
     }
   }
 
@@ -673,24 +670,20 @@ body {
   }
 
   #layer8 .contact-container {
-      display: flex;
-      flex-direction: column !important;
-      flex-wrap: wrap;
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap;
 
-    
     .contact-left {
-        width: 100%;
-    
-}
-    .contact-right {
-        width: 100%;
-        form{
-          
-          text-align: center;
-        }
-    
-}
+      width: 100%;
     }
+    .contact-right {
+      width: 100%;
+      form {
+        text-align: center;
+      }
+    }
+  }
 
   footer {
     .footer-upper {
@@ -770,52 +763,49 @@ body {
   }
 }
 
-@media (max-width: 1114px) {
+@media (max-width: 1100px) {
   /* Styles for tablets or smaller screens */
-     #layer1 {
-        img {
-            width: 90%;
-            height: auto;
-            margin-left: 250px;
-            margin-top: 50px;
-        }
+  #layer1 {
+    img {
+      width: auto;
+      height: auto;
+    
+      /* margin-top: 50px; */
     }
+  }
+  
 
-  #layer3{
-    .layer3-mid{
-
+  #layer3 {
+    .layer3-mid {
       font-size: 17px;
-       span{
+      span {
         font-size: 17px;
-       }
+      }
     }
 
-    .layer3-bottom{
+    .layer3-bottom {
       width: 70%;
     }
-
   }
 
- 
-  .layer4-mid{
-    p{
-
+  .layer4-mid {
+    p {
       font-size: 15px;
     }
   }
-  .card-container{
+  .card-container {
     flex-wrap: wrap;
     gap: 33px;
 
-    .arrow{
+    .arrow {
       display: none;
     }
   }
 
-  #layer6{
-    .member-cards{
+  #layer6 {
+    .member-cards {
       flex-wrap: wrap;
       gap: 33px;
     }
-}
+  }
 }
